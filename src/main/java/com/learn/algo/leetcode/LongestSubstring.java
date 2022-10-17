@@ -1,7 +1,6 @@
-package com.learn.algo;
+package com.learn.algo.leetcode;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class LongestSubstring {
     public static void main(String[] args) {
@@ -10,25 +9,23 @@ public class LongestSubstring {
         System.out.println(longestSubstring(str));
 
     }
-
+    // wrong
     static String longestSubstring (String str) {
         int n = str.length();
         char[] str_char = str.toCharArray();
         int max = -1;
-        Map<String,Integer> charMap = new HashMap<>();
+        String max_str;
+        Queue<Character> charList = new LinkedList<>();
         int result = -1;
         for(int i=0; i < n; i++) {
-            result = charMap.getOrDefault(str_char[i],0);
-            if (result == 0) {
-                charMap.put(String.valueOf(str_char[i]), 1);
+            if(!charList.contains(str_char[i])) {
+                charList.add(str_char[i]);
+                max = Math.max(max, charList.size());
             } else {
-                // remove from beginning in charMap, add at the end
-
+                charList.poll();
+                charList.add(str_char[i]);
             }
-            max = charMap.size();
-
-
         }
-        return  null;
+        return  charList.toString();
     }
 }

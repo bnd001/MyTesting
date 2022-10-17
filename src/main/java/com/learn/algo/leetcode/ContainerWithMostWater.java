@@ -1,4 +1,4 @@
-package com.learn.algo;
+package com.learn.algo.leetcode;
 
 public class ContainerWithMostWater {
     public static void main(String[] args) {

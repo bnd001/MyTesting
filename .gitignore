@@ -1,2 +1,4 @@
-**/target/**
+.target/**
 */.Class
+.idea/
+.target

@@ -1,4 +1,4 @@
-package com.learn.algo;
+package com.learn.algo.leetcode.Tree;
 // Java code to find out minimum cost
 // path to connect all the cities
 import java.util.*;

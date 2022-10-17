@@ -19,7 +19,7 @@ public class SortHashMapValue {
         List<Integer> listEntry = map.entrySet().stream().map(o->o.getValue()).collect(Collectors.toList());
 
 
-        map.entrySet().stream().sorted().collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a,b) -> b, link);
+        //map.entrySet().stream().sorted().collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a,b) -> b, link));
 
         Collections.sort(listEntry);
         System.out.println(listEntry);

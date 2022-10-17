@@ -4,8 +4,12 @@ public class Median2Array {
 
 
     public static void main(String[] args) {
-        int[] nums1 = {1,2,3,4,5};
-        int[] nums2 = {4,5};
+        //int[] nums1 = {1,2,3,4,5};
+        //int[] nums2 = {4,5};
+
+        int[] nums1 = {1,3};
+        int[] nums2 = {2};
+
         System.out.println(findMedianSortedArrays(nums1, nums2));
     }
 
@@ -50,8 +54,9 @@ public class Median2Array {
         }
 
 
-        if ((m+n)%2 == 0) {
-            result = mergedArray[(m-1+n-1)/2];
+        if ((m+n)%2 != 0) {
+            int index = (m+n)/2;
+            result = mergedArray[index];
         } else {
             result = (double) ((double)mergedArray[(m-1+n-1)/2] + (double)mergedArray[((m-1+n-1)/2)+1])/2;
         }
