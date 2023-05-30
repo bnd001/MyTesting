@@ -2,7 +2,7 @@ package com.coding.test.optum;
 
 public class DartGame301 {
 
-    //private static String[] throwList = {"8", "D10", "T6", "SB", "DB", "20", "D17", "DB", "DB", "D17","8", "D10", "T6"};
+    // private static String[] throwList = {"8", "D10", "T6", "SB", "DB", "20", "D17", "DB", "DB", "D17","8", "D10", "T6"};
     //private static String[] throwList = {"8", "D10", "T6", "SB", "DB", "20", "D17", "DB", "DB", "34", "8", "D10"};
     //private static String[] throwList = {"8", "D10", "T6", "SB", "DB", "20", "D17", "DB", "DB", "34", "DB", "DB", "D10", "10", "D2"};
     private static String[] throwList = {"8", "D10", "T6", "SB", "DB", "20", "D17", "DB", "DB", "34", "DB", "DB", "D10", "10", "D3"};

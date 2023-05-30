@@ -102,6 +102,7 @@ public class MST {
 
         // Input 1
         int n1 = 5;
+        // only top half of diagonal of matrix is required
         int city1[][] = {
                 { 0, 1, 2, 3, 4 },
                 { 1, 0, 5, 0, 7 },

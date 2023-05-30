@@ -16,7 +16,7 @@ public class ReverseStringRecusion {
         }
         int index = str.length() -1;
         System.out.print(str.charAt(index));
-        reverseFun(str.substring(0, index));
+        reverseFun(str.substring(0, index));// does substring from 0 to 1 char before index value
 
     }
 }
