@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class ArrayKfrequency {
 
     public static void main(String[] args) {
-        int[] arr = {1,1,2,3,3,4,5};
+        int[] arr = {1,1,1,2,3,3,4,5,5,5,5};
         int k = 2;
         int[] result = findKfrequent(arr, k);
     }
@@ -32,6 +32,7 @@ public class ArrayKfrequency {
                 collect(Collectors.toList());
         for (int i=0 ; i<k; i++) {
             resultArray[i] = (int) sortedList.get(i).getKey();
+            System.out.print(resultArray[i]+ " ");
         }
         return resultArray;
     }

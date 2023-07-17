@@ -8,6 +8,7 @@ public class MethodRefernce {
     public static void main(String[] args) {
         Sayable obj = SayableClass::saySomethong;
         obj.say();
+
     }
 }
 
@@ -15,4 +16,5 @@ public class MethodRefernce {
 
 interface Sayable {
     void say();
+    int i=0;
 }
